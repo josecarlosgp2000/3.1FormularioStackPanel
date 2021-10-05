@@ -1,0 +1,51 @@
+﻿<Window x:Class="FormularioStackPanel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FormularioStackPanel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="800" MaxWidth="800" MinWidth="400">
+    <Grid>
+        <StackPanel Margin="10">
+            <StackPanel Margin="0,0,0,20" Height="60">
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="#FF92E869" Offset="0"/>
+                        <GradientStop Color="#FFCFE027" Offset="1"/>
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <TextBlock Margin="10,5,0,0" FontWeight="Bold" FontSize="16">Nombre</TextBlock>
+                <TextBox  Margin="10,5,5,0"  />
+            </StackPanel>
+
+            <StackPanel Margin="0,0,0,20" Height="60">
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF37D879" Offset="0"/>
+                        <GradientStop Color="#FFCFE027" Offset="1"/>
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <TextBlock Margin="10,5,0,0" FontWeight="Bold" FontSize="16">Direccion</TextBlock>
+                <TextBox  Margin="10,5,5,0"   />
+            </StackPanel>
+
+            <StackPanel Margin="0,0,0,20" Height="60">
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFF57ADF" Offset="0"/>
+                        <GradientStop Color="#FFFF6767" Offset="1"/>
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <TextBlock  Margin="10,5,0,0" FontWeight="Bold" FontSize="16">Correo Electronico</TextBlock>
+                <TextBox Margin="10,5,5,0"   HorizontalAlignment="Left" Width="500" />
+            </StackPanel>
+
+            <StackPanel  Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button  Margin="8" Width="100" >Aceptar</Button>
+                <Button  Margin="8" Width="100" >Cancelar</Button>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>
