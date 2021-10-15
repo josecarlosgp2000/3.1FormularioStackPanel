@@ -5,7 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FormularioStackPanel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="800" MaxWidth="800" MinWidth="400">
+        Icon="Icono/shaq.ico"
+        Title="FormularioStackPanel" Height="350" Width="800" MaxWidth="800" MinWidth="400">
+
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="FontWeight" Value="Bold"></Setter>
+            <Setter Property="FontSize" Value="16"></Setter>
+            <Setter Property="Margin" Value="10,5,0,0"></Setter>
+        </Style>
+
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="8"></Setter>
+            <Setter Property="Width" Value="100"></Setter>
+        </Style>
+
+               
+    </Window.Resources>
     <Grid>
         <StackPanel Margin="10">
             <StackPanel Margin="0,0,0,20" Height="60">
@@ -15,7 +31,7 @@
                         <GradientStop Color="#FFCFE027" Offset="1"/>
                     </LinearGradientBrush>
                 </StackPanel.Background>
-                <TextBlock Margin="10,5,0,0" FontWeight="Bold" FontSize="16">Nombre</TextBlock>
+                <TextBlock Margin="10,5,0,0">Nombre</TextBlock>
                 <TextBox  Margin="10,5,5,0"  />
             </StackPanel>
 
@@ -26,8 +42,8 @@
                         <GradientStop Color="#FFCFE027" Offset="1"/>
                     </LinearGradientBrush>
                 </StackPanel.Background>
-                <TextBlock Margin="10,5,0,0" FontWeight="Bold" FontSize="16">Direccion</TextBlock>
-                <TextBox  Margin="10,5,5,0"   />
+                <TextBlock>Direccion</TextBlock>
+                <TextBox  Margin="10,5,5,0"/>
             </StackPanel>
 
             <StackPanel Margin="0,0,0,20" Height="60">
@@ -37,15 +53,14 @@
                         <GradientStop Color="#FFFF6767" Offset="1"/>
                     </LinearGradientBrush>
                 </StackPanel.Background>
-                <TextBlock  Margin="10,5,0,0" FontWeight="Bold" FontSize="16">Correo Electronico</TextBlock>
+                <TextBlock>Correo Electronico</TextBlock>
                 <TextBox Margin="10,5,5,0"   HorizontalAlignment="Left" Width="500" />
             </StackPanel>
 
             <StackPanel  Orientation="Horizontal" HorizontalAlignment="Right">
-                <Button  Margin="8" Width="100" >Aceptar</Button>
-                <Button  Margin="8" Width="100" >Cancelar</Button>
+                <Button>Aceptar</Button>
+                <Button>Cancelar</Button>
             </StackPanel>
         </StackPanel>
-
     </Grid>
 </Window>
