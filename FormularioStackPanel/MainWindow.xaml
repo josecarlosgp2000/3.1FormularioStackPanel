@@ -20,7 +20,15 @@
             <Setter Property="Width" Value="100"></Setter>
         </Style>
 
-               
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="Margin" Value="10,5,5,0"></Setter>
+        </Style>
+
+        <Style TargetType="{x:Type TextBox}" x:Key="ultimoTextBox" BasedOn="{StaticResource {x:Type TextBox}}">
+            <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+            <Setter Property="Width" Value="500"></Setter>
+        </Style>
+
     </Window.Resources>
     <Grid>
         <StackPanel Margin="10">
@@ -32,7 +40,7 @@
                     </LinearGradientBrush>
                 </StackPanel.Background>
                 <TextBlock Margin="10,5,0,0">Nombre</TextBlock>
-                <TextBox  Margin="10,5,5,0"  />
+                <TextBox/>
             </StackPanel>
 
             <StackPanel Margin="0,0,0,20" Height="60">
@@ -43,7 +51,7 @@
                     </LinearGradientBrush>
                 </StackPanel.Background>
                 <TextBlock>Direccion</TextBlock>
-                <TextBox  Margin="10,5,5,0"/>
+                <TextBox/>
             </StackPanel>
 
             <StackPanel Margin="0,0,0,20" Height="60">
@@ -54,7 +62,7 @@
                     </LinearGradientBrush>
                 </StackPanel.Background>
                 <TextBlock>Correo Electronico</TextBlock>
-                <TextBox Margin="10,5,5,0"   HorizontalAlignment="Left" Width="500" />
+                <TextBox Style="{StaticResource ultimoTextBox}"/>
             </StackPanel>
 
             <StackPanel  Orientation="Horizontal" HorizontalAlignment="Right">
